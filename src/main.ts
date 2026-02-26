@@ -15,9 +15,6 @@ Application.build({ routes: require('./routes') })
       app.use(express.static(path.join(__dirname, '.assets')))
     } else {
 
-      // TODO: remove this
-      app.use(express.static(path.join(__dirname, '.assets')))
-
       app.use(
         helmet({
           contentSecurityPolicy: {
